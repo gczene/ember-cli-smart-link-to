@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-smart-link-to",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Component to handle either URLs/paths or routes as link-to helper.",
   "repository": {
     "type": "git",

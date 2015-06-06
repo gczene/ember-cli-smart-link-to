@@ -1,6 +1,6 @@
 # Ember-cli-smart-link-to
 
-This README outlines the details of collaborating on this Ember addon.
+Component to handle external URLs in link-to helper
 
 ## Installation
 

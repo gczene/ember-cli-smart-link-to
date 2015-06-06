@@ -45,9 +45,7 @@ cssClass  | added to `<a class="">` attribute
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+* `npm install ember-cli-smart-link-to` --save
 
 ## Running
 

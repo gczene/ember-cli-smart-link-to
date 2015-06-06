@@ -1,0 +1,7 @@
+{{#if isRoute}}
+  {{#link-to link class=cssClass target=target}}
+    {{yield}}{{label}}
+  {{/link-to}}
+{{else}}
+  <a href="{{link}}" class="{{cssClass}}" target="{{target}}">{{yield}}{{label}}</a>
+{{/if}}

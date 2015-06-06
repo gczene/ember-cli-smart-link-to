@@ -8,7 +8,7 @@ Example problem to resolve: given an array of objects where a `link` property ca
 
 This component uses block form.
 
-##Usage:
+## Usage:
 ```html
           {{#smart-link-to label="Tell me more" link=myLink}}
             <i class="fa fa-angle-right"></i>
@@ -17,7 +17,7 @@ This component uses block form.
 The string in the **block form** is passed before the `<a></a>` tag. See below:
 
 
-##Output
+## Output
 If `myLink` in the previous example is an existing route, e.g. in your router.js:
 ```javascript
 //router.js
@@ -34,7 +34,7 @@ will be rendered as
 ```
 If it is `not` an existing route it will render the usual `<a>` tag.
 
-##Options:
+## Options:
 
 Option  | Description
 ------------- | -------------
@@ -45,7 +45,7 @@ cssClass  | added to `<a class="">` attribute
 
 ## Installation
 
-* `npm install ember-cli-smart-link-to` --save
+* `npm install ember-cli-smart-link-to`  --save
 
 ## Running
 

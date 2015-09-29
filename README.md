@@ -38,7 +38,7 @@ If it is `not` an existing route it will render the usual `<a>` tag.
 
 Option  | Description
 ------------- | -------------
-target  | target attribute for `<a>` tag. Default is '_self'
+target  | target attribute for `<a>` tag.
 cssClass  | added to `<a class="">` attribute
 
 

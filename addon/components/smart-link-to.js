@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   layout: layout,
   // cssClass passed to link to or <a> tag
   cssClass: '',
-  target: '_self',
+  target: '',
   isRoute: function () {
     return this.get('container').has('route:' + this.get('link'));
   }.property('link')

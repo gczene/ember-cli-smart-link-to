@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-smart-link-to",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "Component to handle either URLs/paths or routes as link-to helper.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/gczene/ember-cli-smart-link-to",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Gabor Czene",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",

@@ -2,6 +2,8 @@ import { moduleForComponent, test } from 'ember-qunit';
 import Em from 'ember';
 
 moduleForComponent('smart-link-to', 'Unit | Component | smart link to', {
+  // Specify the other units that are required for this test
+  // needs: ['component:foo', 'helper:bar'],
   unit: true
 });
 
@@ -23,8 +25,10 @@ test('should render an <a> tag', function (assert) {
     label: 'testLabel',
     cssClass: 'testClass'
   },
-    component = this.subject(injection),
-    $component = this.$();
+  $component;
+
+  this.subject(injection);
+  $component = this.$();
 
   assert.equal(Em.$('a', $component).length, 1);
 });
@@ -33,10 +37,13 @@ test('should render an <a> tag', function (assert) {
   var injection = {
     link: 'testLink',
     label: 'testLabel',
-    cssClass: 'testClass'
+    cssClass: 'testClass',
+    target: '_self'
   },
-    component = this.subject(injection),
-    $component = this.$();
+  $component;
+
+  this.subject(injection);
+  $component = this.$();
 
   assert.equal(
     Em.$('a', $component).attr('href'),
@@ -64,8 +71,10 @@ test('should render an <a> tag', function (assert) {
     cssClass: 'testClass',
     target: '_blank'
   },
-    component = this.subject(injection),
-    $component = this.$();
+  $component;
+
+  this.subject(injection);
+  $component = this.$();
 
   assert.equal(
     Em.$('a', $component).attr('target'),

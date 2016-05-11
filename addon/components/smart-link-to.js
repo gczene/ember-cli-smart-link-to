@@ -1,4 +1,5 @@
 import Ember from 'ember';
+const { getOwner } = Ember;
 import layout from '../templates/components/smart-link-to';
 
 export default Ember.Component.extend({
@@ -7,6 +8,6 @@ export default Ember.Component.extend({
   cssClass: '',
   target: '',
   isRoute: function () {
-    return this.get('container').has('route:' + this.get('link'));
+    return getOwner(this).has('route:' + this.get('link'));
   }.property('link')
 });

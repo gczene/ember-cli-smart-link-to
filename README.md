@@ -45,7 +45,7 @@ cssClass  | added to `<a class="">` attribute
 
 ## Installation
 
-* `npm install ember-cli-smart-link-to`  --save
+* `ember install ember-cli-smart-link-to`
 
 ## Running
 

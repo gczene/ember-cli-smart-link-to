@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-smart-link-to",
   "version": "1.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Component to handle either URLs/paths or routes as link-to helper.",
   "directories": {
     "doc": "doc",
     "test": "tests"

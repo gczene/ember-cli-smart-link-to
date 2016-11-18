@@ -1,24 +1,20 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import Ember from 'ember';
 
 moduleForComponent('smart-link-to', 'Integration | Component | smart link to', {
   integration: true
 });
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+test('smart-link-to component', function(assert) {
 
-  this.render(hbs`{{smart-link-to}}`);
-
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
+  this.set('container', Ember.getOwner(this));
   this.render(hbs`
-    {{#smart-link-to}}
-      template block text
-    {{/smart-link-to}}
+    {{smart-link-to link="testLink" label="testLabel" cssClass="testClass" target="_blank"}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('a').text().trim(), 'testLabel', 'should render label into <a> tag');
+  assert.equal(this.$('a').hasClass('testClass'), true, 'should add custom css class');
+  assert.equal(this.$('a').attr('href'), 'testLink', 'should set testLink to href');
+  assert.equal(this.$('a').attr('target'), '_blank', 'should set target if passed');
 });

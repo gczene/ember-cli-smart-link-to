@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   layout,
   cssClass: '',
   target: '',
+  tagName: '',
   isRoute: Ember.computed('link', function () {
     return Ember.getOwner(this).hasRegistration('route:' + this.get('link'));
   })
